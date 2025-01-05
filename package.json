@@ -34,5 +34,6 @@
     "typescript-eslint": "^8.18.2",
     "vite": "^6.0.5",
     "vite-plugin-windicss": "^1.9.4"
-  }
+  },
+  "homepage": "https://scesca.github.io/Portfolio-Pessoal/"
 }
