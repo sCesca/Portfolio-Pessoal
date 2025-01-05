@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins-Regular.ttf") format("truetype");
+}
+
+@layer base {
+  body {
+    font-family: "Poppins";
+    background-color: #1b1b1b;
+    color: #fff;
+  }
+
+  ::-webkit-scrollbar {
+    width: 0;
+  }
+}
+
+@layer components {
+  .shape {
+    background: linear-gradient(
+      rgb(0, 4, 255) 0%,
+      rgb(0, 217, 255) 76%,
+      rgba(252, 252, 252, 1) 100%
+    );
+    border-radius: 25rem 25rem 0 0;
+    opacity: 0.7;
+  }
+
+  .shape-old-tale {
+    background: linear-gradient(
+      rgb(255, 136, 0) 0%,
+      rgb(255, 196, 0) 76%,
+      rgba(252, 252, 252, 1) 100%
+    );
+    border-radius: 25rem 25rem 0 0;
+    opacity: 0.7;
+  }
+
+  .shape-roda {
+    background: linear-gradient(
+      rgb(4, 102, 1) 0%,
+      rgb(65, 202, 23) 76%,
+      rgba(252, 252, 252, 1) 100%
+    );
+    border-radius: 25rem 25rem 0 0;
+    opacity: 0.7;
+  }
+
+  .glass-btn {
+    background: linear-gradient(
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0)
+    );
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(14px);
+  }
+
+  .wrapper {
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    max-height: 100vh;
+  }
+
+  .timeline {
+    position: relative;
+    padding-left: 2rem;
+    margin-left: 1rem;
+    border-left: 2px solid #ccc;
+  }
+
+  .timeline-item {
+    position: relative;
+  }
+
+  .timeline-icon {
+    position: absolute;
+    left: -1.5rem;
+    top: 0;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+  }
+
+  .timeline-content {
+    margin-left: 2rem;
+  }
+}
