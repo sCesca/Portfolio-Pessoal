@@ -26,6 +26,7 @@ import Contact from './components/Contact'
 
 import music from './assets/music.mp3'
 import { useEffect, useRef } from 'react'
+import ControlePonto from './components/ControlePonto'
 
 function App() {
   const handleLinkedInClick = () => {
@@ -99,6 +100,7 @@ function App() {
           <div className='bg-white/25 size-4 rounded-full bullet-4'></div>
           <div className='bg-white/25 size-4 rounded-full bullet-5'></div>
           <div className='bg-white/25 size-4 rounded-full bullet-6'></div>
+          <div className='bg-white/25 size-4 rounded-full bullet-7'></div>
         </div>
         <div className='space-y-8 [&>8]:cursor-pointer'>
           <FaGithub onClick={handleGitHubClick} className="hover:text-cyan-500" />
@@ -124,9 +126,11 @@ function App() {
           <RodaRep />
         </div>
         <div className='section'>
+          <ControlePonto />
+        </div>
+        <div className='section'>
           <Contact />
         </div>
-
       </div>
     </>
   )
