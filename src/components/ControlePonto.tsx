@@ -17,7 +17,7 @@ const ControlePonto = () => {
             <div className="px-40 py-80 mt-20 backdrop-blur-3xl gap-20 items-center flex flex-col-reverse lg:items-start lg:py-40 lg:px-80 lg:flex-row">
                 <div className="flex flex-col gap-20 lg:gap-8">
                     <img src={ponto} className='w-[12rem] self-center' alt='RODA' />
-                    <div className='flex flex-row lg:flex-wrap items-center gap-4'>
+                    <div className='flex flex-row  items-center gap-4'>
                         <FcInfo className='w-20 h-20 lg:w-10 lg:h-10' />
                         <div className='opacity-50 text-xl lg:text-sm flex-wrap'>Aplicativo para controle de pontos de funcionários</div>
                     </div>

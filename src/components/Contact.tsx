@@ -13,7 +13,7 @@ const Contact = () => {
     return (
         <section className="panel h-screen relative snap-start">
             <div className="shape lg:rotate-0 absolute ml-60 mt-80 lg:m-0 lg:size-40 lg:right-60 lg:top-36"></div>
-            <div className="backdrop-blur-3xl gap-20 lg:gap-0 flex flex-col lg:flex-row items-center justify-between px-60 py-80 lg:py-40">
+            <div className="backdrop-blur-3xl gap-20 lg:gap-0 flex flex-col lg:flex-row items-center justify-between px-60 py-60 lg:py-40">
                 <p className="text-5xl lg:text-6xl w-200">
                     Veja mais projetos em meu perfil do GitHub
                 </p>
@@ -25,7 +25,7 @@ const Contact = () => {
                     />
                 </a>
             </div>
-            <div className='px-60  py-30 lg:py-40 space-y-40 lg:space-y-0 flex-col flex lg:flex-row items-start lg:items-center justify-between'>
+            <div className='px-60 py-30 lg:py-40 space-y-20 lg:space-y-0 flex-col flex lg:flex-row items-start lg:items-center justify-between'>
                 <div className='space-y-4'>
                     <p className='opacity-60 text-5xl lg:text-sm'>Número de Celular</p>
                     <p className='text-3xl lg:text-sm'>+55 19 97112-0502</p>
