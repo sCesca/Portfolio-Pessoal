@@ -89,9 +89,9 @@ function App() {
 
       <div className='z-50 fixed h-[70vh] bottom-0 w-24 flex flex-col justify-between items-center p-10 text-white'>
         <div className='flex -rotate-90 items-center gap-8'>
-          <p onClick={scrollToBottom} className="cursor-pointer">Fim</p>
-          <div className='w-20 h-[1px] bg-white/50'></div>
-          <p onClick={scrollToTop} className="cursor-pointer">Início</p>
+          <p onClick={scrollToBottom} className="cursor-pointer text-2xl lg:text-sm">Fim</p>
+          <div className='lg:w-40 w-80 h-[3px] bg-white/50'></div>
+          <p onClick={scrollToTop} className="cursor-pointer text-2xl lg:text-sm">Início</p>
         </div>
         <div className='fixed space-y-6 top-2/4 right-10 z-50'>
           <div className='bg-white/25 size-4 rounded-full bullet-1'></div>
@@ -103,9 +103,9 @@ function App() {
           <div className='bg-white/25 size-4 rounded-full bullet-7'></div>
         </div>
         <div className='space-y-8 [&>8]:cursor-pointer'>
-          <FaGithub onClick={handleGitHubClick} className="hover:text-cyan-500" />
-          <FaLinkedin onClick={handleLinkedInClick} className="hover:text-cyan-500" />
-          <FaInstagram onClick={handleInstagramClick} className="hover:text-cyan-500" />
+          <FaGithub onClick={handleGitHubClick} className="hover:text-cyan-500 size-10 lg:size-5" />
+          <FaLinkedin onClick={handleLinkedInClick} className="hover:text-cyan-500 size-10 lg:size-5" />
+          <FaInstagram onClick={handleInstagramClick} className="hover:text-cyan-500 size-10 lg:size-5" />
         </div>
       </div>
 

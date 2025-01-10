@@ -16,49 +16,49 @@ const About: React.FC = () => {
     return (
         <section className="panel h-screen relative snap-start">
             <div className="shape absolute w-full h-[60vh] left-0 right-0 rotate-180"></div>
-            <div className="h-full w-full backdrop-blur-3xl flex flex-col justify-center p-40">
+            <div className="h-full w-full backdrop-blur-3xl flex flex-col gap-20 justify-center lg:gap-0  p-40">
                 <h1 className="text-6xl p-20">Sobre mim</h1>
-                <div className="w-full self-start flex flex-row gap-6">
+                <div className="w-full self-start flex flex-col lg:flex-row gap-6">
                     <div className='space-y-4'>
 
-                        <div className='flex flex-row ml-40 items-center gap-4'>
+                        <div className='flex flex-row lg:ml-40 items-center gap-4'>
                             <PiStudentFill className='w-[5rem] h-[5rem]' />
-                            <div className='opacity-60'>Estudante de Sistemas de Informação</div>
+                            <div className='opacity-60 text-xl lg:text-sm'>Estudante de Sistemas de Informação</div>
                         </div>
 
-                        <div className='flex flex-row ml-40 items-center gap-4'>
+                        <div className='flex flex-row lg:ml-40 items-center gap-4'>
                             <FcMultipleDevices className='w-[5rem] h-[5rem]' />
-                            <div className='opacity-60'>Apaixonado por Tecnologia, Inovação e Desenvolvimento</div>
+                            <div className='opacity-60 text-xl lg:text-sm'>Apaixonado por Tecnologia, Inovação e Desenvolvimento</div>
                         </div>
                     </div>
                     <div className='space-y-4'>
-                        <div className='flex flex-row ml-40 items-center gap-4'>
+                        <div className='flex flex-row lg:ml-40 items-center gap-4'>
                             <IoLocationOutline className='w-[5rem] h-[5rem]' />
-                            <div className='opacity-60'>{age} anos | SP - Brasil</div>
+                            <div className='opacity-60 text-xl lg:text-sm'>{age} anos | SP - Brasil</div>
                         </div>
 
-                        <div className='flex flex-row ml-40 items-center gap-4'>
+                        <div className='flex flex-row lg:ml-40 items-center gap-4'>
                             <FcBookmark className='w-[5rem] h-[5rem]' />
-                            <div className='opacity-60'>Gosto de Filosofia (Oriental, Schopenhauer, Cioran)</div>
+                            <div className='opacity-60 text-xl lg:text-sm'>Gosto de Filosofia (Oriental, Schopenhauer, Cioran)</div>
                         </div>
                     </div>
                 </div>
                 <div className="px-10 py-20">
-                    <div className="flex items-center justify-around gap-40">
-                        <h1 className="text-3xl">Competências</h1>
+                    <div className="flex flex-col lg:flex-row lg:items-center justify-around gap-20 lg:gap-40">
+                        <h1 className="text-5xl">Competências</h1>
                         <ul className="space-y-2">
-                            <p>Desenvolvimento</p>
-                            <li className="opacity-60">Front-End</li>
-                            <li className="opacity-60">Back-End</li>
-                            <li className="opacity-60">Mobile</li>
+                            <p className='text-3xl lg:text-sm'>Desenvolvimento</p>
+                            <li className="opacity-60 text-xl lg:text-sm">Front-End</li>
+                            <li className="opacity-60 text-xl lg:text-sm">Back-End</li>
+                            <li className="opacity-60 text-xl lg:text-sm">Mobile</li>
                         </ul>
                         <ul className="space-y-2">
-                            <p>Ferramentas</p>
-                            <li className="opacity-60">ReactJS</li>
-                            <li className="opacity-60">React Native</li>
-                            <li className="opacity-60">NodeJS</li>
-                            <li className="opacity-60">Git</li>
-                            <li className="opacity-60">SQLite, Firebase, MongoDB</li>
+                            <p className='text-3xl lg:text-sm' >Ferramentas</p>
+                            <li className="opacity-60 text-xl lg:text-sm">ReactJS</li>
+                            <li className="opacity-60 text-xl lg:text-sm">React Native</li>
+                            <li className="opacity-60 text-xl lg:text-sm">NodeJS</li>
+                            <li className="opacity-60 text-xl lg:text-sm">Git</li>
+                            <li className="opacity-60 text-xl lg:text-sm">SQLite, Firebase, MongoDB</li>
                         </ul>
                     </div>
                 </div>

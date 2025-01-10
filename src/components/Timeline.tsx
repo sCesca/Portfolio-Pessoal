@@ -10,8 +10,8 @@ interface TimelineProps {
 
 const Timeline: React.FC<TimelineProps> = ({ defaultColor }) => {
     return (
-        <div className="panel h-screen snap-start flex flex-row relative overflow-y-auto">
-            <div className="w-1/1.5 p-4">
+        <div className="panel h-screen snap-start flex flex-col lg:flex-row relative overflow-y-auto">
+            <div className="w-1/1.5 p-4 mt-40 lg:m-0">
                 <h2 className="text-2xl font-bold mb-4">Trajetória Acadêmica</h2>
                 {TimeLineSchool.map((item: TimelineschoolType) => {
                     const color: string = defaultColor || `bg-${item.color}-500`;
@@ -53,7 +53,7 @@ const Timeline: React.FC<TimelineProps> = ({ defaultColor }) => {
                     )
                 })}
             </div>
-            <div className="w-1/2 p-4">
+            <div className="w-1/1.5 p-4">
                 <h2 className="text-2xl font-bold mb-4">Trajetória Profissional</h2>
                 {TimeLineWork.map((item: TimelineWorkType) => {
                     const color: string = defaultColor || `bg-${item.color}-500`;
